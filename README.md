@@ -1,7 +1,27 @@
-Description: Conducted a comprehensive analysis of a bank marketing dataset to identify factors influencing customer subscription to term deposits. Built predictive models using machine learning to enhance campaign targeting, leading to increased subscription rates. The project included data preprocessing, exploratory data analysis, feature engineering, model building, and hyperparameter tuning. Usability testing was conducted at each stage of model development to assess prediction accuracy.
+# Bank Marketing Campaign Analysis and Predictive Modeling
 
-Challenges and Solutions:
-One challenge was managing the class imbalance in the dataset, as most clients did not subscribe. This was addressed by applying oversampling techniques to balance the data and improve model training outcomes. Additionally, feature selection required careful evaluation to maintain model interpretability without sacrificing performance.
+## Project Overview
+This project analyzes a bank marketing campaign dataset to predict whether a customer will subscribe to a term deposit. It includes exploratory data analysis (EDA), preprocessing, and predictive modeling using KNN, SVM, Decision Tree, Naive Bayes, and a stacking ensemble. The project also features a Streamlit app for model deployment.
 
-Results:
-The final Random Forest model achieved a 93.6% accuracy rate, significantly improving prediction reliability. Key insights from the analysis helped the client refine their marketing approach, contributing to a 20% increase in campaign efficiency.
+## Files
+- `bank_marketing_analysis.ipynb`: Jupyter Notebook with the full analysis and modeling.
+- `stacking_pipeline_model.pkl`: Trained stacking model.
+- `Cleaned_Bank.csv`: Cleaned dataset (not included in repository due to size).
+- `Cleaned_encoded_Bank.csv`: Encoded dataset (not included in repository due to size).
+- `app.py`: Streamlit app for model deployment.
+
+## Requirements
+- Python 3.x
+- Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, imblearn, streamlit, joblib
+- Install dependencies: `pip install -r requirements.txt`
+
+## How to Run
+1. Clone the repository: `git clone https://github.com/your-username/Bank-Marketing-Project.git`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the Streamlit app: `streamlit run app.py`
+
+## Dataset
+The dataset (`Bank.csv`) is not included due to its size.
+## Results
+- **Best Model**: Stacking ensemble (95% accuracy).
+- See the notebook for detailed performance metrics and visualizations.
